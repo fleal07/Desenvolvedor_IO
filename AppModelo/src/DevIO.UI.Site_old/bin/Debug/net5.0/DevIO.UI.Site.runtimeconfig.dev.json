@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/home/fleal07/.dotnet/store/|arch|/|tfm|",
+      "/home/fleal07/.nuget/packages"
+    ]
+  }
+}

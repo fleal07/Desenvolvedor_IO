@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "4nB9hzaVnpEEgLiIzA8VdS8/rYddJMmmwuiI3k590YRdj/w4GhnglQISVZ07N70UdxAw28H605i86Q0bYu4+Hw==",
+  "success": true,
+  "projectFilePath": "/mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/DevIO.UI.Site.csproj",
+  "expectedPackageFiles": [
+    "/home/fleal07/.nuget/packages/buildbundlerminifier/3.2.449/buildbundlerminifier.3.2.449.nupkg.sha512"
+  ],
+  "logs": []
+}
