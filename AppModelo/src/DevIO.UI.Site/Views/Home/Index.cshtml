@@ -1,8 +1,16 @@
-﻿@{
+﻿@* Não é a maneira mais correta de fazer isso na view
+Ideal é passar os dados da Model para a view *@
+@using DevIO.UI.Site.Data
+@inject IPedidoRepository PedidoRepository
+
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
+
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
+    <h2>Seu ID é: @PedidoRepository.ObterPedido().Id</h2>
     <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>

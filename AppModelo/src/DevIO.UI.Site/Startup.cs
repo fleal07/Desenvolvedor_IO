@@ -1,3 +1,5 @@
+using DevIO.UI.Site.Data;
+using DevIO.UI.Site.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc.Razor;
@@ -29,6 +31,15 @@ namespace DevIO.UI.Site
             });
 
             services.AddControllersWithViews();
+
+            services.AddTransient<IPedidoRepository, PedidoRepository>();
+
+            services.AddTransient<IOperacaoTransient, Operacao>();
+            services.AddScoped<IOperacaoScoped, Operacao>();
+            services.AddSingleton<IOperacaoSingleton, Operacao>();
+            services.AddSingleton<IOperacaoSingletonInstace>(new Operacao(System.Guid.Empty));
+
+            services.AddTransient<OperacaoService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
