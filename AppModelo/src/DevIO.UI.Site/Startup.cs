@@ -30,6 +30,9 @@ namespace DevIO.UI.Site
                 options.AreaViewLocationFormats.Add(item:"/Views/Shared/{0}.cshtml");
             });
 
+            services.AddDbContext<MeuDbContext>(options => 
+                options.UseNpgsql(Configuration.GetConnectionString("MeuDbContext")));
+
             services.AddControllersWithViews();
 
             services.AddTransient<IPedidoRepository, PedidoRepository>();

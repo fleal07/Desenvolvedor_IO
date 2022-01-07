@@ -1,0 +1,11 @@
+namespace DevIO.UI.Site.Data
+{
+    public class MeuDbContext : DbContext
+    {
+        public MeuDbContext(DbContextOptions<MeuDbContext> options) : base(options)
+        {
+
+            
+        }
+    }
+}
