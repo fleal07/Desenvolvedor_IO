@@ -44,3 +44,12 @@
 /mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/obj/Debug/net5.0/Razor/Modulos/Produtos/Views/Cadastro/Busca.cshtml.g.cs
 /mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/obj/Debug/net5.0/Razor/Modulos/Vendas/Views/Pedidos/Index.cshtml.g.cs
 /mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/obj/Debug/net5.0/Razor/Modulos/Vendas/Views/_ViewStart.cshtml.g.cs
+/mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/bin/Debug/net5.0/Humanizer.dll
+/mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.dll
+/mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Design.dll
+/mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/bin/Debug/net5.0/Microsoft.EntityFrameworkCore.Relational.dll
+/mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/bin/Debug/net5.0/Microsoft.Extensions.DependencyInjection.dll
+/mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/bin/Debug/net5.0/Npgsql.dll
+/mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/bin/Debug/net5.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll
+/mnt/485087F05087E354/Repos/Desenvolvedor_IO/AppModelo/src/DevIO.UI.Site/bin/Debug/net5.0/System.Diagnostics.DiagnosticSource.dll
