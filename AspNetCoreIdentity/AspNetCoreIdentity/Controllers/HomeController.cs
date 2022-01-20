@@ -1,4 +1,5 @@
-﻿using AspNetCoreIdentity.Models;
+﻿using AspNetCoreIdentity.Extensions;
+using AspNetCoreIdentity.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
@@ -23,7 +24,6 @@ namespace AspNetCoreIdentity.Controllers
         [AllowAnonymous]
         public IActionResult Index()
         {
-            Console.WriteLine("teste");
             return View();
         }
 
@@ -41,6 +41,18 @@ namespace AspNetCoreIdentity.Controllers
 
         [Authorize(Policy = "PodeExcluir")]
         public IActionResult SecretClaim()
+        {
+            return View("Secret");
+        }
+
+        [Authorize(Policy = "Ler")]
+        public IActionResult SecretClaimPolicy()
+        {
+            return View("Secret");
+        }
+
+        [ClaimsAuthorize("Produtos","Ler")]
+        public IActionResult SecretClaimCustom()
         {
             return View("Secret");
         }
