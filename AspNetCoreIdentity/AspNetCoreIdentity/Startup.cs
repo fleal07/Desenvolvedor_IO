@@ -1,4 +1,5 @@
 using AspNetCoreIdentity.Configuration;
+using AspNetCoreIdentity.Extensions;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -41,6 +42,10 @@ namespace AspNetCoreIdentity
             services.ResolveDependencies();
 
             services.AddControllersWithViews();
+            //services.AddControllersWithViews(options =>
+            //{
+            //    options.Filters.Add(typeof(AuditoriaFilter));
+            //});
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

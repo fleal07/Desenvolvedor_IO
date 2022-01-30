@@ -199,3 +199,4 @@ C:\git\Desenvolvedor_IO\AspNetCoreIdentity\AspNetCoreIdentity\bin\Debug\net5.0\M
 C:\git\Desenvolvedor_IO\AspNetCoreIdentity\AspNetCoreIdentity\bin\Debug\net5.0\Microsoft.AspNetCore.Metadata.dll
 C:\git\Desenvolvedor_IO\AspNetCoreIdentity\AspNetCoreIdentity\bin\Debug\net5.0\appsettings.Production.json
 C:\git\Desenvolvedor_IO\AspNetCoreIdentity\AspNetCoreIdentity\bin\Debug\net5.0\appsettings.Staging.json
+C:\git\Desenvolvedor_IO\AspNetCoreIdentity\AspNetCoreIdentity\obj\Debug\net5.0\Razor\Views\Test\Index.cshtml.g.cs
