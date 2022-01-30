@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Routing;
-using System;
 using System.Linq;
 using System.Security.Claims;
 
@@ -42,7 +41,8 @@ namespace AspNetCoreIdentity.Extensions
                 context.Result = new RedirectToRouteResult(new RouteValueDictionary(new { area = "Identity", page = "/Account/Login", ReturnUrl = context.HttpContext.Request.Path.ToString() }));
 
             if (!CustomAuthorization.ValidarClaimsUsuario(context.HttpContext, _claim.Type, _claim.Value))
-                context.Result = new ForbidResult();
+                //context.Result = new ForbidResult();
+                context.Result = new StatusCodeResult(403);
         }
     }
 }

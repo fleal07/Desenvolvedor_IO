@@ -2,12 +2,9 @@
 using AspNetCoreIdentity.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Logging;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AspNetCoreIdentity.Controllers
 {
@@ -30,6 +27,7 @@ namespace AspNetCoreIdentity.Controllers
         [Authorize]
         public IActionResult Privacy()
         {
+            throw new Exception("erro");
             return View();
         }
 
@@ -51,16 +49,42 @@ namespace AspNetCoreIdentity.Controllers
             return View("Secret");
         }
 
-        [ClaimsAuthorize("Produtos","Ler")]
+        [ClaimsAuthorize("Produtos", "Ler")]
         public IActionResult SecretClaimCustom()
         {
             return View("Secret");
         }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
+        [Route("erro/{id:length(3,3)}")]
+        public IActionResult Error(int id)
         {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+            var modelError = new ErrorViewModel();
+
+            if (id == 500)
+            {
+                modelError.Menssagem = "Ocorreu um erro! Tente novamente mais tarde ou contate nosso suporte.";
+                modelError.Titulo = "Ocorreu um erro!";
+                modelError.ErroCode = id;
+            }
+            else if (id == 404)
+            {
+                modelError.Menssagem = "A página que está procurando não existe!<br /> Em caso de dúvida entre em contato com nosso suporte.";
+                modelError.Titulo = "Ops! Página não encontrada.";
+                modelError.ErroCode = id;
+
+            }
+            else if (id == 403)
+            {
+                modelError.Menssagem = "Você não tem permissão para realizar esta operação.";
+                modelError.Titulo = "Acesso Negado!";
+                modelError.ErroCode = id;
+            }
+            else
+            {
+                return StatusCode(404);
+            }
+
+            return View("Error",modelError);
         }
     }
 }

@@ -1,51 +1,44 @@
-using AspNetCoreIdentity.Areas.Identity.Data;
-using AspNetCoreIdentity.Extensions;
-using Microsoft.AspNetCore.Authorization;
+using AspNetCoreIdentity.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AspNetCoreIdentity
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
-
         public IConfiguration Configuration { get; }
+
+        public Startup(IWebHostEnvironment hostingEnvironment)
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(hostingEnvironment.ContentRootPath)
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+                .AddJsonFile($"appsettings.{hostingEnvironment.EnvironmentName}.json", optional: true, reloadOnChange: true)
+                .AddEnvironmentVariables();
+
+            //Use Secrets: Configuração utilizada para salvar dados 
+            // de configuração da sua máquina
+            //Ex: Conection string
+
+            if (hostingEnvironment.IsProduction())
+            {
+                builder.AddUserSecrets<Startup>();
+            }
+
+            Configuration = builder.Build();
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddIdentityConfig(Configuration);
 
-            services.AddDbContext<AspNetCoreIdentityContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("AspNetCoreIdentityContextConnection")));
+            services.AddAuthorizationConfig();
 
-            services.AddDefaultIdentity<IdentityUser>()
-                    .AddRoles<IdentityRole>()
-                    .AddDefaultUI()
-                    .AddEntityFrameworkStores<AspNetCoreIdentityContext>();
-
-            services.AddAuthorization(options => 
-            {
-                options.AddPolicy("PodeExcluir", policy => policy.RequireClaim("PodeExcluir"));
-
-                options.AddPolicy("Ler", policy => policy.Requirements.Add(new PermissaoNecessaria("Ler")));
-                options.AddPolicy("Editar", policy => policy.Requirements.Add(new PermissaoNecessaria("Editar")));
-            });
-
-            services.AddSingleton<IAuthorizationHandler, PermissaoNecessariaHandler>();
+            services.ResolveDependencies();
 
             services.AddControllersWithViews();
         }
@@ -59,10 +52,12 @@ namespace AspNetCoreIdentity
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
+                //Personalizando o erro
+                app.UseExceptionHandler("/erro/500");
+                app.UseStatusCodePagesWithRedirects("erro/{0}");
                 app.UseHsts();
             }
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 

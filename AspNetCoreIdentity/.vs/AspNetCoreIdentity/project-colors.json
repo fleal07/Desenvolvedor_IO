@@ -5,6 +5,11 @@
       "ProjectGuid": "556d546c-80e2-467e-aafd-283b342f95e5",
       "DisplayName": "AspNetCoreIdentity",
       "ColorIndex": 0
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 1
