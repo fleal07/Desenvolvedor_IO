@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "8039759d-9838-4964-b191-e7b023eb4826": {
+      "ProjectGuid": "8039759d-9838-4964-b191-e7b023eb4826",
+      "DisplayName": "AppMvc.App",
+      "ColorIndex": 0
+    },
+    "cf95d22a-0e5f-447e-8c58-dfd7a1604fc0": {
+      "ProjectGuid": "cf95d22a-0e5f-447e-8c58-dfd7a1604fc0",
+      "DisplayName": "AppMvc.Business",
+      "ColorIndex": 1
+    },
+    "e0001f32-036b-4005-87b7-417165486f82": {
+      "ProjectGuid": "e0001f32-036b-4005-87b7-417165486f82",
+      "DisplayName": "AppMvc.Data",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
