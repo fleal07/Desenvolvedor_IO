@@ -1,0 +1,12 @@
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\bin\Debug\net5.0\AppMvc.Business.deps.json
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\bin\Debug\net5.0\AppMvc.Business.dll
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\bin\Debug\net5.0\ref\AppMvc.Business.dll
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\bin\Debug\net5.0\AppMvc.Business.pdb
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\obj\Debug\net5.0\AppMvc.Business.csproj.AssemblyReference.cache
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\obj\Debug\net5.0\AppMvc.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\obj\Debug\net5.0\AppMvc.Business.AssemblyInfoInputs.cache
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\obj\Debug\net5.0\AppMvc.Business.AssemblyInfo.cs
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\obj\Debug\net5.0\AppMvc.Business.csproj.CoreCompileInputs.cache
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\obj\Debug\net5.0\AppMvc.Business.dll
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\obj\Debug\net5.0\ref\AppMvc.Business.dll
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Business\obj\Debug\net5.0\AppMvc.Business.pdb
