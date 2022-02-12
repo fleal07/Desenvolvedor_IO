@@ -1,0 +1,15 @@
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\bin\Debug\net5.0\AppMvc.Data.deps.json
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\bin\Debug\net5.0\AppMvc.Data.dll
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\bin\Debug\net5.0\ref\AppMvc.Data.dll
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\bin\Debug\net5.0\AppMvc.Data.pdb
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\bin\Debug\net5.0\AppMvc.Business.dll
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\bin\Debug\net5.0\AppMvc.Business.pdb
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\obj\Debug\net5.0\AppMvc.Data.csproj.AssemblyReference.cache
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\obj\Debug\net5.0\AppMvc.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\obj\Debug\net5.0\AppMvc.Data.AssemblyInfoInputs.cache
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\obj\Debug\net5.0\AppMvc.Data.AssemblyInfo.cs
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\obj\Debug\net5.0\AppMvc.Data.csproj.CoreCompileInputs.cache
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\obj\Debug\net5.0\AppMvc.Data.csproj.CopyComplete
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\obj\Debug\net5.0\AppMvc.Data.dll
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\obj\Debug\net5.0\ref\AppMvc.Data.dll
+C:\git\Desenvolvedor_IO\AppMvcCompleta\MinhaAppMvcCompleta\src\AppMvc.Data\obj\Debug\net5.0\AppMvc.Data.pdb
